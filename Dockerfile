@@ -16,6 +16,3 @@ RUN apt-get update
 ############### Begin Installation ###############
 RUN apt-get install -y gcc clang make gdb cgdb valgrind git
 ###############  Installation End  ###############
-
-# Set default container command
-ENTRYPOINT exec /bin/bash
