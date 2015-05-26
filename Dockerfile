@@ -14,11 +14,8 @@ MAINTAINER Paul Campbell <paul.campbell@stonybrook.edu>
 RUN apt-get update
 
 ############### Begin Installation ###############
-RUN apt-get install -y gcc clang make gdb cgdb valgrind git vim emacs
+RUN apt-get install -y gcc clang make gdb cgdb valgrind git
 ###############  Installation End  ###############
-
-# Set the user
-USER cse320-student
 
 # Set default container command
 ENTRYPOINT exec /bin/bash
